@@ -1,7 +1,7 @@
 # Hash It Out Lab - Submission
 
-**Student Name:** [Your Name Here]  
-**Date:** [Submission Date]  
+**Student Name:**  Mia Semlow 
+**Date:** 2/10/2026  
 **CSPC 250: Computer Systems Security**
 
 ---
@@ -12,15 +12,15 @@
 
 **1. What is the MD5 hash of your name?**
 
-[Your answer here]
+f520518d6a33de4116504f9a26a429d3
 
 **2. Run the command again with the exact same name. Did the hash change? Why or why not?**
 
-[Your answer here]
+No it did not change because my name has already been hashed once
 
 **3. Change one letter of your name (like capitalizing it) and run again. How different is the hash?**
 
-[Your answer here]
+Everything is different about the hash. Different letters and numbers in different orders.
 
 ---
 
@@ -32,7 +32,7 @@
 
 **5. In your own words, explain what a hash collision is and why it's a security concern.**
 
-[Your answer here]
+A hash collision is when two different codes have the same hash, and its a concern because it can let people cheat or hack in very easily.
 
 ---
 
@@ -42,11 +42,18 @@
 
 **6. Why would a system have users with `*` instead of password hashes?**
 
-[Your answer here]
+Users with * instead of password hashes cannot log in with a password; these accounts exist only for system tasks or security purposes.
 
 **7. What do the different parts of karl's password line mean? (Hint: Research the format of `/etc/shadow` entries)**
 
-[Your answer here]
+    7. $y$ → Which hashing algorithm (Yescrypt)
+    j9T → Salt (random value)
+    oR2Z… → Hashed password
+    19255 → Last password change
+    0 → Minimum days before next change
+    99999 → Max days before change
+    7 → Warning period before expiry
+    ::: → Extra info (usually empty)
 
 ---
 
@@ -54,15 +61,15 @@
 
 **8. Why don't systems store passwords in plaintext?**
 
-[Your answer here]
+Systems don’t store plaintext passwords to protect user security and privacy. They store hashed versions instead.
 
 **9. What is a "salt" in password hashing and why is it used?**
 
-[Your answer here]
+Salt is a radomized value added to a password before getting hashed to make it more secure.
 
 **10. Research the `yescrypt` algorithm (the `$y$` prefix). Why is it considered secure?**
 
-[Your answer here]
+It is secure because it is a salted, slow hashing algorithm designed to resist brute. force and GPU based password attacks.
 
 ---
 
@@ -72,15 +79,15 @@
 
 **11. What was karl's password?**
 
-[Your answer here]
+karl:test:19255:0:99999:7:::
 
 **12. How long did it take John to crack it?**
 
-[Your answer here]
+It took John a couple seconds to crack it.
 
 **13. Why was this password easy to crack?**
 
-[Your answer here]
+
 
 ---
 
